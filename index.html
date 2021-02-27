@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+			integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<title>FCC technical-document</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div>
+				<div id="open-nav-btn" class="ham-nav-arrow-btn show">
+					<i class="far fa-arrow-alt-circle-right arrow"></i>
+				</div>
+				<div id="close-nav-btn" class="ham-nav-arrow-btn hide">
+					<i class="far fa-arrow-alt-circle-left arrow"></i>
+				</div>
+			</div>
+			<div class="navigation">
+				<nav id="navbar">
+					<header>
+						<div>
+							<i class="fab fa-vuejs"></i>
+							<span>Vue.js</span>
+						</div>
+					</header>
+					<ul class="nav-list">
+						<li><a class="nav-link" href="#Introduction">Introduction</a></li>
+						<li>
+							<a class="nav-link" href="#Getting_started">Getting Started</a>
+						</li>
+						<li>
+							<a class="nav-link" href="#Declarative_rendering"
+								>Declarative Rendering</a
+							>
+						</li>
+						<li>
+							<a class="nav-link" href="#Handling_user_input"
+								>Handling User Input</a
+							>
+						</li>
+						<li>
+							<a class="nav-link" href="#Conditionals_and_loops"
+								>Conditionals and Loops</a
+							>
+						</li>
+						<li>
+							<a class="nav-link" href="#Composing_with_components"
+								>Composing with Components</a
+							>
+						</li>
+						<li>
+							<a class="nav-link" href="#Reference">Reference</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<main id="main-doc">
+				<section class="main-section" id="Introduction">
+					<header>Introduction</header>
+					<article>
+						<p>
+							Vue (pronounced /vjuː/, like view) is a progressive framework for
+							building user interfaces. Unlike other monolithic frameworks, Vue
+							is designed from the ground up to be incrementally adoptable. The
+							core library is focused on the view layer only, and is easy to
+							pick up and integrate with other libraries or existing projects.
+							On the other hand, Vue is also perfectly capable of powering
+							sophisticated Single-Page Applications when used in combination
+							with modern tooling and supporting libraries (opens new window).
+						</p>
+						<p>
+							If you’d like to learn more about Vue before diving in,
+							<a
+								href="https://www.vuemastery.com/courses/intro-to-vue-3/intro-to-vue3"
+								target="_blank"
+								>watch a free video course on Vue Mastery</a
+							>
+						</p>
+					</article>
+				</section>
+				<section class="main-section" id="Getting_started">
+					<header>Getting Started</header>
+					<article>
+						<p>
+							The official guide assumes intermediate level knowledge of HTML,
+							CSS, and JavaScript. If you are totally new to frontend
+							development, it might not be the best idea to jump right into a
+							framework as your first step - grasp the basics then come back!
+							Prior experience with other frameworks helps, but is not required.
+						</p>
+						<p>
+							The easiest way to try out Vue.js is using the Hello World
+							example:
+						</p>
+						<code
+							>const HelloVueApp = { data() { return { message: 'Hello Vue!!' }
+							} } Vue.createApp(HelloVueApp).mount('#hello-vue')</code
+						>
+						<p>
+							The<a
+								href="https://v3.vuejs.org/guide/installation.html"
+								target="_blank"
+							>
+								Installation page</a
+							>
+							provides more options of installing Vue. Note: it is not
+							recommended that beginners start with <code>vue-cli</code>,
+							especially if you are not yet familiar with Node.js-based build
+							tools. #
+						</p>
+					</article>
+				</section>
+				<section class="main-section" id="Declarative_rendering">
+					<header>Declarative Rendering</header>
+					<article>
+						<p>
+							At the core of Vue.js is a system that enables us to declaratively
+							render data to the DOM using straightforward template syntax:
+						</p>
+						<p>
+							<code
+								>const Counter = { data() { return { counter: 0 } } }
+								Vue.createApp(Counter).mount('#counter')</code
+							>
+						</p>
+						<p>
+							The easiest way to try out Vue.js is using the Hello World
+							example:
+						</p>
+             <code
+        >if (condition) { statement_1_runs_if_condition_is_true;
+        
+        statement_2_runs_if_condition_is_true; } else {
+        statement_3_runs_if_condition_is_false;
+        statement_4_runs_if_condition_is_false; }</code
+      >
+						<code
+							>const HelloVueApp = { data() { return { message: 'Hello Vue!!' }
+							} } Vue.createApp(HelloVueApp).mount('#hello-vue')</code
+						>
+						<p>
+							The<a
+								href="https://v3.vuejs.org/guide/installation.html"
+								target="_blank"
+							>
+								Installation page</a
+							>
+							provides more options of installing Vue. Note: it is not
+							recommended that beginners start with <code>vue-cli</code>,
+							especially if you are not yet familiar with Node.js-based build
+							tools. #
+						</p>
+					</article>
+				</section>
+			</main>
+		</div>
+		<script src="./script.js"></script>
+	</body>
+</html>
