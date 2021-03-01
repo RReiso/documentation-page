@@ -11,7 +11,7 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="./style.css" />
-		<title>FCC technical-document</title>
+		<title>FCC technical documentation page</title>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -23,7 +23,7 @@
 					<i class="far fa-arrow-alt-circle-left arrow"></i>
 				</div>
 			</div>
-			<div class="navigation ">
+			<div class="navigation">
 				<nav id="navbar">
 					<header id="navbar-header">
 						<div>
@@ -31,33 +31,49 @@
 							<span>Vue.js</span>
 						</div>
 					</header>
-					<ul class="nav-list nobullets ">
-						<li><a class="nav-link notextdec link" href="#Introduction">Introduction</a></li>
+					<ul class="nav-list nobullets">
 						<li>
-							<a class="nav-link notextdec link" href="#Getting_started">Getting Started</a>
+							<a class="nav-link notextdec link-grey" href="#Introduction"
+								>Introduction</a
+							>
 						</li>
 						<li>
-							<a class="nav-link notextdec link" href="#Declarative_rendering"
+							<a class="nav-link notextdec link-grey" href="#Getting_Started"
+								>Getting Started</a
+							>
+						</li>
+						<li>
+							<a
+								class="nav-link notextdec link-grey"
+								href="#Declarative_Rendering"
 								>Declarative Rendering</a
 							>
 						</li>
 						<li>
-							<a class="nav-link notextdec link" href="#Handling_user_input"
+							<a
+								class="nav-link notextdec link-grey"
+								href="#Handling_User_Input"
 								>Handling User Input</a
 							>
 						</li>
 						<li>
-							<a class="nav-link notextdec link" href="#Conditionals_and_loops"
+							<a
+								class="nav-link notextdec link-grey"
+								href="#Conditionals_and_Loops"
 								>Conditionals and Loops</a
 							>
 						</li>
 						<li>
-							<a class="nav-link notextdec link" href="#Relation_to_custom_elements"
+							<a
+								class="nav-link notextdec link-grey"
+								href="#Relation_to_Custom_Elements"
 								>Relation to Custom Elements</a
 							>
 						</li>
 						<li>
-							<a class="nav-link notextdec link" href="#Reference">Reference</a>
+							<a class="nav-link notextdec link-grey" href="#Reference"
+								>Reference</a
+							>
 						</li>
 					</ul>
 				</nav>
@@ -67,27 +83,28 @@
 					<header>Introduction</header>
 					<article>
 						<p>
-							Vue (pronounced /vjuː/, like view) is a progressive framework for
-							building user interfaces. Unlike other monolithic frameworks, Vue
-							is designed from the ground up to be incrementally adoptable. The
-							core library is focused on the view layer only, and is easy to
-							pick up and integrate with other libraries or existing projects.
-							On the other hand, Vue is also perfectly capable of powering
-							sophisticated Single-Page Applications when used in combination
-							with modern tooling and supporting libraries (opens new window).
+							Vue (pronounced /<em>vjuː</em>/, like view) is a progressive
+							framework for building user interfaces. Unlike other monolithic
+							frameworks, Vue is designed from the ground up to be incrementally
+							adoptable. The core library is focused on the view layer only, and
+							is easy to pick up and integrate with other libraries or existing
+							projects. On the other hand, Vue is also perfectly capable of
+							powering sophisticated Single-Page Applications when used in
+							combination with modern tooling and supporting libraries (opens
+							new window).
 						</p>
 						<p>
 							If you’d like to learn more about Vue before diving in,
 							<a
 								href="https://www.vuemastery.com/courses/intro-to-vue-3/intro-to-vue3"
 								target="_blank"
-                class="notextdec link text-bold"
+								class="link-grey text-bold"
 								>watch a free video course on Vue Mastery</a
 							>.
 						</p>
 					</article>
 				</section>
-				<section class="main-section" id="Getting_started">
+				<section class="main-section" id="Getting_Started">
 					<header>Getting Started</header>
 					<article>
 						<p>
@@ -120,18 +137,18 @@
 							The<a
 								href="https://v3.vuejs.org/guide/installation.html"
 								target="_blank"
-                class="notextdec link text-bold"
+								class="link-grey text-bold"
 							>
 								Installation page</a
 							>
 							provides more options of installing Vue. Note: it is not
-							recommended that beginners start with <code class="inline-code">vue-cli</code>,
-							especially if you are not yet familiar with Node.js-based build
-							tools
+							recommended that beginners start with
+							<code class="inline-code">vue-cli</code>, especially if you are
+							not yet familiar with Node.js-based build tools
 						</p>
 					</article>
 				</section>
-				<section class="main-section" id="Declarative_rendering">
+				<section class="main-section" id="Declarative_Rendering">
 					<header>Declarative Rendering</header>
 					<article>
 						<p>
@@ -170,7 +187,7 @@
 						</p>
 					</article>
 				</section>
-				<section class="main-section" id="Handling_user_input">
+				<section class="main-section" id="Handling_User_Input">
 					<header>Handling User Input</header>
 					<article>
 						<p>
@@ -191,7 +208,7 @@
 								>const EventHandling = { data() { return { message: 'Hello
 								Vue.js!' } }, methods: { reverseMessage() { this.message =
 								this.message .split('') .reverse() .join('') } } }
-								Vue.createApp<wbr>(EventHandling)<wbr />.mount('#event-handling')</code
+								Vue.createApp<wbr />(EventHandling)<wbr />.mount('#event-handling')</code
 							>
 						</p>
 						<p>
@@ -201,7 +218,7 @@
 						</p>
 					</article>
 				</section>
-				<section class="main-section" id="Conditionals_and_loops">
+				<section class="main-section" id="Conditionals_and_Loops">
 					<header>Conditionals and Loops</header>
 					<article>
 						<p>It's easy to toggle the presence of an element, too:</p>
@@ -228,7 +245,7 @@
 						</p>
 					</article>
 				</section>
-				<section class="main-section" id="Relation_to_custom_elements">
+				<section class="main-section" id="Relation_to_Custom_Elements">
 					<header>Relation to Custom Elements</header>
 					<article>
 						<p>
@@ -241,11 +258,22 @@
 						<ol>
 							<li>
 								The Web Components Spec has been finalized but is not natively
-								implemented in every browser. Safari 10.1+, Chrome 54+ and
-								Firefox 63+ natively support web components. In comparison, Vue
-								components work consistently in all supported browsers (IE11
-								with compatibility build and above). When needed, Vue components
-								can also be wrapped inside a native custom element.
+								implemented in every browser.
+								<ul>
+									<li>
+										Safari 10.1+, Chrome 54+ and Firefox 63+ natively support
+										web components.
+									</li>
+									<li>
+										In comparison, Vue components work consistently in all
+										supported browsers (IE11 with compatibility build and
+										above).
+									</li>
+									<li>
+										When needed, Vue components can also be wrapped inside a
+										native custom element.
+									</li>
+								</ul>
 							</li>
 							<li>
 								Vue components provide important features that are not available
@@ -269,7 +297,7 @@
 							<a
 								href="https://v3.vuejs.org/guide/introduction.html"
 								target="_blank"
-                class="notextdec link text-bold"
+								class="link-grey text-bold"
 								>official Vue.js page</a
 							>
 						</p>
@@ -277,18 +305,18 @@
 				</section>
 			</main>
 		</div>
-    <footer>
+		<footer>
 			<div id="creator">Created by RReiso</div>
 			<div class="footer-links">
-				<a href="https://github.com/rreiso" target="_blank" class="link">
+				<a href="https://github.com/rreiso" target="_blank" class="link-grey">
 					<p class="sr-only">link to rreiso github.com profile page</p>
 					<i class="fab fa-github fa-lg" aria-hidden="true"></i
 				></a>
-				<a href="https://twitter.com/rreisoh" target="_blank" class="link">
+				<a href="https://twitter.com/rreisoh" target="_blank" class="link-grey">
 					<p class="sr-only">link to rreiso codepen.io profile page</p>
 					<i class="fab fa-twitter fa-lg" aria-hidden="true"></i
 				></a>
-				<a href="https://codepen.io/rreiso" target="_blank" class="link">
+				<a href="https://codepen.io/rreiso" target="_blank" class="link-grey">
 					<p class="sr-only">link to rreiso codepen.io profile page</p>
 					<i class="fab fa-codepen fa-lg" aria-hidden="true"></i
 				></a>
