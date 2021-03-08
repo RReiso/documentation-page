@@ -13,7 +13,6 @@ navlinks.forEach((navlink) => {
 function togglenav() {
 	sideMenu.classList.toggle("menu-show");
   CloseMenuBtn.classList.toggle("show");
-	OpenMenuBtn.classList.togge("show");
 }
 
 
