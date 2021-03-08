@@ -1,21 +1,19 @@
 const OpenMenuBtn = document.querySelector("#open-nav-btn");
 const CloseMenuBtn = document.querySelector("#close-nav-btn");
 const sideMenu = document.querySelector(".navigation");
+const navlinks = document.querySelectorAll(".nav-link")
 
-OpenMenuBtn.addEventListener("click", () => {
-	sideMenu.classList.add("menu-show");
-	OpenMenuBtn.classList.remove("show");
-	OpenMenuBtn.classList.add("hide");
-	CloseMenuBtn.classList.remove("hide");
-	CloseMenuBtn.classList.add("show");
+OpenMenuBtn.addEventListener("click", togglenav);
+CloseMenuBtn.addEventListener("click", togglenav);
+
+navlinks.forEach((navlink) => {
+	navlink.addEventListener("click", togglenav);
 });
 
-CloseMenuBtn.addEventListener("click", () => {
-	sideMenu.classList.remove("menu-show");
-	CloseMenuBtn.classList.remove("show");
-	CloseMenuBtn.classList.add("hide");
-	OpenMenuBtn.classList.remove("hide");
-	OpenMenuBtn.classList.add("show");
-});
+function togglenav() {
+	sideMenu.classList.toggle("menu-show");
+  CloseMenuBtn.classList.toggle("show");
+	OpenMenuBtn.classList.togge("show");
+}
 
 
